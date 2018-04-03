@@ -10,18 +10,18 @@ import { TodoService } from '../../services/todo.service';
 export class TodoItemComponent implements OnInit {
 
   @Input()
-  private todo: Todo;
+  public todo: Todo;
 
   constructor(private todoService: TodoService) { }
 
   ngOnInit() {
   }
 
-  private removeTodo(): void {
+  public removeTodo(): void {
     this.todoService.removeTodo(this.todo.id);
   }
 
-  private editTodo(todoText): void {  
+  public editTodo(todoText): void {  
     this.todoService.editTodo(todoText, this.todo.id);
   }
 

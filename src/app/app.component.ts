@@ -9,7 +9,7 @@ import { TodoService } from './services/todo.service';
 
 export class AppComponent {
 
-  constructor(private todoService: TodoService) {
+  constructor(public todoService: TodoService) {
   }  
 
 }

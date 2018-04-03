@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Todo } from '../../classes/todo';
 import { TodoService } from '../../services/todo.service';
 
 @Component({
@@ -9,26 +8,23 @@ import { TodoService } from '../../services/todo.service';
 })
 export class FooterComponent implements OnInit {
 
-  private todo: Todo;
-
   constructor(private todoService: TodoService) { }
 
   ngOnInit() {
   }
 
-  private sortIdUp(): void {
+  public sortIdUp(): void {
     this.todoService.sortIdUp();
   }
-  private sortIdDown(): void {
+  public sortIdDown(): void {
     this.todoService.sortIdDown();
   }
 
-  private sortTextUp(): void {
+  public sortTextUp(): void {
     this.todoService.sortTextUp();
   }
 
-  private sortTextDown(): void {
+  public sortTextDown(): void {
     this.todoService.sortTextDown();
   }
-
 }

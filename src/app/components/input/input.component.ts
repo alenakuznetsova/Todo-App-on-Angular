@@ -17,7 +17,7 @@ export class InputComponent implements OnInit {
   ngOnInit() {
   }
 
-  private addTodo(): void {
+  public addTodo(): void {
     this.todoService.addTodo(this.todoText);
     this.todoText = '';
   }
