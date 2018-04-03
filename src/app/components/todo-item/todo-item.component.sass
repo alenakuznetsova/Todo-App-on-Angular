@@ -1,0 +1,63 @@
+$white: #ffffff
+$delete: #EF9A9A
+$delete-hover: #EF5350
+$edit: #A5D6A7
+$edit-hover: #4CAF50
+$border-color: #00BCD4
+
+.todo-list
+  list-style: none
+  
+.todo-wrapper
+  padding: 2px 0  
+
+.bts
+  display: inline
+  
+
+.todo-item
+  word-break: break-all
+  background: #ffffff
+  padding: 15px 75px 15px 15px 
+  border-bottom: 2px solid $border-color
+  box-sizing: border-box
+  width: 100%
+  position: relative
+
+  &:hover, &:active, &:focus
+
+    .btn-del 
+      display: inline
+      font-size: 30px
+      color: $delete
+      background: transparent
+      border: none
+      position: absolute
+      right: 0
+      top: 7px
+
+      &:active, &:hover, &:focus 
+        outline: 0
+        outline-offset: 0
+        color: $delete-hover
+
+    .btn-edit
+      display: inline
+      color: $edit
+      background: transparent
+      border: solid 1px $edit
+      border-radius: 2px 
+      position: absolute
+      right: 30px
+      padding: 5px
+      top: 11px
+
+      &:active, &:hover, &:focus 
+        outline: 0
+        outline-offset: 0
+        color: $edit-hover
+        border: solid 1px $edit-hover
+
+.btn-del, 
+.btn-edit
+  display: none

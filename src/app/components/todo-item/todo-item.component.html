@@ -1,0 +1,8 @@
+<div class="todo-wrapper">  
+  <div class="todo-item" contenteditable="true">
+    <span>{{todo.id}}. </span> 
+    <span #todoText>{{todo.text}}</span>   
+    <button class="btn-edit" contenteditable="false" (click)="editTodo(todoText.textContent)" title="save">save edit</button>
+    <button class="btn-del" contenteditable="false" (click)="removeTodo()" title="delete">&times;</button>
+  </div>  
+</div>
