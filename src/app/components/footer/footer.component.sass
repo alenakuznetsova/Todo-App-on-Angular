@@ -1,6 +1,10 @@
 $border-color: #EEEEEE
 $border-color-active: #00BCD4
 
+ul 
+  margin: 0
+  padding: 0
+
 .footer-wraper
   display: flex
   flex-wrap: wrap
@@ -19,9 +23,13 @@ $border-color-active: #00BCD4
   text-decoration: none
   color: grey
   background: #ffffff
-  padding: 5px  
+  padding: 10px  
   border-radius: 5px
   border: 2px solid $border-color
 
   &:hover, &:active, &:focus
     border: 2px solid $border-color-active
+
+@media screen and (max-width: 700px) 
+  .filter
+    padding: 5px
