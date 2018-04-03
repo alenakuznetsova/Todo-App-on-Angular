@@ -49,8 +49,9 @@ $border-color: #00BCD4
       border-radius: 2px 
       position: absolute
       right: 30px
-      padding: 5px
-      top: 11px
+      padding: 2px
+      top: 17px
+      font-size: 10px
 
       &:active, &:hover, &:focus 
         outline: 0
@@ -61,3 +62,9 @@ $border-color: #00BCD4
 .btn-del, 
 .btn-edit
   display: none
+
+@media screen and (max-width: 1200px) 
+  .btn-edit 
+    font-size: 16px
+    padding: 5px
+    top: 11px
